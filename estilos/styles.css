@@ -1,0 +1,534 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-family: "flama light";
+  font-size: 62,5%;
+  font-style: normal;
+  font-weight: 400;
+  height: 100%;
+
+}
+
+/* -----------------------------Diseño del Nav Bar ----------------------------*/
+li a {
+  font-weight: 500;
+  font-size: 20px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 0%;
+  background-color: #000000;
+}
+
+.logo{
+  cursor: pointer;
+border-radius: 40em;
+}
+
+.nav_links {
+  list-style: none;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px ;
+}
+
+.nav_links li a {
+  transition: all 0,3s ease 0s;
+}
+
+.nav_links li a:hover {
+  color: #0088a9;
+}
+
+/* ------------------------------Diseño del footer*-----------------------*/
+footer{
+  display: flex;
+  background-color: aquamarine;
+  height: 50px;
+  text-align: left;
+  align-items: center;
+  
+  width: 100%;
+  bottom: 0%;
+  padding-left: 10px;
+}
+/*
+.footer {
+        position: absolute;
+        bottom:0; 
+        bottom: 0;
+        width:100%;
+        height:50px;
+        font-size: 17px; 
+        }
+*/
+/*Lo uso en la sección "Servicio" para dejarlo abajo correctamente  */
+
+.footer--posicionDistinta{
+  position: absolute;
+  bottom: 0;
+}
+
+/* -------------------------Inicio Grid del Index------------------------------------- */
+.containerIndex{
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 60px 790px 60px;
+grid-template-areas: "headerIndex"
+                     "fondoImagenIndex"
+                     "footerIndex";
+}
+
+.headerIndex{
+  grid-area: headerIndex;
+}
+
+.fondoImagenIndex{
+  grid-area: fondoImagenIndex;
+  background: url("../imagenes/uct5c.png");
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.fondoImagenIndex::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0,0,0,0.5);
+}
+
+
+.footerIndex{
+  grid-area: footerIndex;
+}
+
+.slogan {
+  position: relative;
+  top: 45vh;
+  color: rgb(0, 0, 0);
+  background-color: rgba(189, 189, 189, 0.692);
+  font-size: calc(1em + 1vw);
+  line-height: 1.5em;
+  text-align: center;
+  animation: transitionIn 2s;
+}
+
+.slogan--historiaGeo{
+  margin-left: 250px;
+  margin-right: 250px;
+  width: fit-content;
+  padding: 0%;
+  padding-right: 200px;
+  padding-left:200px;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  top: 55vh;
+  background-color: rgba(236, 134, 134, 0.692);
+  animation: transitionIn 2s;
+}
+
+
+/*-----------------------------------Inicio GRID de sección Empresa--------------------------*/
+.grid{
+  display: grid;
+
+  /* background-color: rgb(226, 213, 209); */
+  grid-template-columns: 1fr ;
+  grid-template-rows: 60px 790px 60px;
+  grid-template-areas: "gridHeader"
+                       "fotoSeccionEmpresa"
+                        "footer";
+}
+
+.gridHeader{
+  grid-area: gridHeader;
+}
+
+.tituloNosotros{
+  position: relative;
+  text-align: center;
+  margin-top: 15px;
+  /* color: whitesmoke; */
+  color: #a00d08df;
+  margin-bottom: 1rem;
+}
+
+.fotoSeccionEmpresa{
+    /* display:flex; */
+  /* grid-area: fotoSeccionEmpresa;
+  background: url("../imagenes/personaGeo.jpg");
+  background-size: 100% 100%;
+  object-fit: cover;
+  object-position: center;
+  background-repeat:no-repeat;
+  overflow: hidden; */
+    grid-area: fotoSeccionEmpresa;
+    position: relative; 
+    background: url("../imagenes/personaGeo.jpg");
+    background-size: 100% 100%;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    font-size: 1.1rem;
+}
+
+.fotoSeccionEmpresa::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.nosotros{
+  display: block;
+  position: relative;
+  color: rgba(245, 245, 245, 0.863);
+  text-align: justify;
+  overflow: hidden;
+  margin-top:3rem;
+  padding-left: 18rem;
+  padding-right: 18rem;
+  }
+.nosotros p{
+  padding: 0.5rem;
+}
+.misionVision{
+  display: flex;
+}
+
+.mision {
+  position: relative;
+  display: inline-block;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  line-height:25px;
+  color: rgba(245, 245, 245, 0.863);
+  padding-left: 3rem;
+  padding-right: 5rem;
+  /* font-family: ManifaPro2-Light, Frutiger, Muna, Helvetica, Arial, sans-serif; */
+}
+
+.vision {
+  position: relative;
+  display: inline-block;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  line-height:25px;
+  color: rgba(245, 245, 245, 0.863);
+  padding-left: 5rem;
+  padding-right: 3rem;
+}
+
+.tituloMision{
+  position: relative;
+  text-align: center;
+  margin-top: 15px;
+  color: #a00d08df;
+  margin-bottom: 1rem;
+} 
+
+ .tituloVision{
+   position: relative;
+  text-align: center;
+  margin-top: 15px;
+  color: #a00d08df;
+  margin-bottom: 1rem;
+}
+
+.smac {
+  display: block;
+  position: relative;
+  color: rgba(245, 245, 245, 0.863);
+  text-align: justify;
+  font-size: 1.2rem;
+  overflow: hidden;
+  margin-top:2rem;
+  padding-left: 18rem;
+  padding-right: 18rem;
+}
+
+.tituloSmac{
+  position: relative;
+  text-align: center;
+  margin-top: 15px;
+  color: #a00d08df;
+  margin-bottom: 1rem;
+}
+.smac p{
+  padding: 0.5rem;
+}
+
+.footergrid{
+  grid-area: footer;
+}
+/*-------------------------------Finalización GRID de sección "Empresa"---------------------------*/
+
+
+
+/* -------------------------INICIO GRID---Sección "Servicio"-----------------------------------*/
+
+.containerServicio{
+  display: grid;
+  background-image:linear-gradient(to right, rgb(149, 149, 149), #a00d08 99%);
+  
+  grid-template-columns: 60% 40%;
+  grid-gap: 10px;
+  grid-template-areas: "headerServicio headerServicio"
+                        "infoServicioCoiledTubing fotoServicio1"
+                        "infoCeyf fotoServicio2"
+                        "infoCg fotoServicio3"
+                        "footerServicio footerServicio";
+}
+
+.containerServicio > div {
+  height: 350px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  line-height: 25px;
+}
+
+.headerServicio{
+  grid-area: headerServicio;
+  
+}
+.infoServicioCoiledTubing{
+  grid-area: infoServicioCoiledTubing;
+  padding: 50px;
+}
+
+.infoCeyf{
+  grid-area: infoCeyf;
+  padding: 50px;
+}
+
+.infoCg{
+  grid-area: infoCg;
+  padding: 50px;
+}
+
+.fotoServicio1{
+  grid-area: fotoServicio1;
+  background: url("../imagenes/UCT-5A.png");
+  background-size: 100% 100%;
+  object-fit: cover;
+  object-position: center;
+  background-repeat:no-repeat;
+
+}
+.fotoServicio2{
+  grid-area: fotoServicio2;
+  background: url("../imagenes/CEYF.png");
+  background-size: 100% 100%;
+  object-fit: cover;
+  object-position: center;
+  background-repeat: no-repeat;
+}
+.fotoServicio3{
+  grid-area: fotoServicio3;
+  background: url("../imagenes/cc-03.jpg");
+  background-size: 100% 100%;
+  object-fit: cover;
+  object-position: center;
+  background-repeat: no-repeat;
+}
+
+.footerServicio{
+  grid-area: footerServicio;
+ 
+}
+
+/* -------------------------FINALIZACIÓN GRID---Sección "Servicio"-----------------------------------*/
+
+
+
+/*---------------------------Seccion "Contacto"---------------------*/
+
+.fondoContacto{
+  background: url(../imagenes/personalGeo7.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+}
+.fondoContacto main,header{
+  position: relative;
+}
+.fondoContacto::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0,0,0,0.5);
+}
+
+
+
+/* ..............................INICIO GRID---Sección "Equipos"..........................*/
+
+.containerEquipos{
+  display: grid;
+  border: 5px solid black;
+  background-image:linear-gradient(to right, rgb(149, 149, 149), #a00d08 99%);
+
+  /* background-color: rgb(226, 213, 209); */
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 60px 300px 300px 300px 60px;
+  grid-template-areas: "headerEquipo headerEquipo headerEquipo"
+                       "equipoUct5 equipoUct5 seccionEquiposUct5"
+                       "equipoUct3y4 equipoUct3y4 seccionEquiposUct4y3 "
+                       "equipoUct1 equipoUct1 seccionEquiposUct1 "
+                       "footerEquipos footerEquipos footerEquipos";
+}
+
+.containerEquipos > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  line-height:25px;
+}
+
+.containerEquipos > div {
+  border: 3px solid black;
+}
+
+.containerEquipos >div >h2{
+  margin: 10px;
+  padding-bottom: 40px; 
+  animation: transitionIn 4s;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.headerEquipo{
+  grid-area: headerEquipo;
+}
+
+.equipoUct5{
+  grid-area: equipoUct5;
+}
+
+.equipoUct3y4{
+  grid-area: equipoUct3y4;
+}
+
+.equipoUct1{
+  grid-area: equipoUct1;
+}
+
+.footerEquipos{
+  grid-area: footerEquipos;
+}
+
+.seccionEquiposUct5{
+  grid-area: seccionEquiposUct5;
+  background: url("../imagenes/uct5b.png");
+  background-size: 100% 100%;
+  object-fit: cover;
+  object-position: center;
+  background-repeat:no-repeat;
+  overflow: hidden;
+}
+
+.seccionEquiposUct5:hover{
+transform: scale(2) translateX(-240px) translateY(130px) ;
+animation: desplazamientoPic1 1s ;
+}
+
+@keyframes desplazamientoPic1 {
+  from{
+    transform: none ;
+  }
+  to {
+    transform: scale(2) translateX(-240px) translateY(130px);
+  }
+}
+
+.seccionEquiposUct4y3 {
+  grid-area: seccionEquiposUct4y3;
+  background: url("../imagenes/fotoUct3y4.png");
+  background-size: 100% 100%;
+  object-fit: cover;
+  object-position: center;
+  background-repeat:no-repeat;
+}
+
+.seccionEquiposUct4y3:hover{
+  transform: scale(2) translateX(-240px) translateY(0px) ;
+  animation: desplazamientoPic2 1s ;
+  }
+  @keyframes desplazamientoPic2 {
+    from{
+      transform: none ;
+    }
+    to {
+      transform: scale(2) translateX(-240px) translateY(0px);
+    } 
+  }
+
+.seccionEquiposUct1 {
+  grid-area: seccionEquiposUct1;
+  background: url("../imagenes/fotoUct1.jpeg");
+  background-size: 100% 100%;
+  object-fit: cover;
+  object-position: center;
+  background-repeat:no-repeat;
+}
+
+.seccionEquiposUct1:hover{
+  transform: scale(2) translateX(-240px) translateY(-150px) ;
+  animation: desplazamientoPic3 1s ;
+  }
+  @keyframes desplazamientoPic3 {
+    from{
+      transform: none ;
+    }
+    to {
+      transform: scale(2) translateX(-240px) translateY(-150px);
+    }  
+  }
+
+/* ..............................FINALIZACIÓN GRID---Sección "Equipos"..........................*/
+
+
