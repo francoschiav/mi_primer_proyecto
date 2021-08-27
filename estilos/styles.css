@@ -53,8 +53,14 @@ border-radius: 40em;
   color: #0088a9;
 }
 
+
+
+
+
+
+
 /* ------------------------------Diseño del footer*-----------------------*/
-footer{
+/* footer{
   display: flex;
   background-color: aquamarine;
   height: 50px;
@@ -64,7 +70,13 @@ footer{
   width: 100%;
   bottom: 0%;
   padding-left: 10px;
+} */
+
+.footer--posicionDistinta{
+  position: absolute;
+  bottom: 0;
 }
+
 /*
 .footer {
         position: absolute;
@@ -77,13 +89,9 @@ footer{
 */
 /*Lo uso en la sección "Servicio" para dejarlo abajo correctamente  */
 
-.footer--posicionDistinta{
-  position: absolute;
-  bottom: 0;
-}
 
 /* -------------------------Inicio Grid del Index------------------------------------- */
-.containerIndex{
+/* .containerIndex{
 display: grid;
 grid-template-columns: 1fr;
 grid-template-rows: 60px 790px 60px;
@@ -114,7 +122,7 @@ grid-template-areas: "headerIndex"
   bottom: 0px;
   left: 0px;
   background-color: rgba(0,0,0,0.5);
-}
+} */
 
 
 .footerIndex{
@@ -146,12 +154,63 @@ grid-template-areas: "headerIndex"
   animation: transitionIn 2s;
 }
 
+/*-----------------------------------sección Empresa con BS--------------------------*/
 
-/*-----------------------------------Inicio GRID de sección Empresa--------------------------*/
-.grid{
+/* .seccionEmpresaConBs{
+  position: relative;
+  background: url(../imagenes/personaGeo.jpg);
+
+  min-height: 80vh;
+  object-fit: cover;
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  padding: 100px 0 220px;
+} */
+
+/* .seccionEmpresaConBs::before {
+  content: "";
+background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.9));
+ display: block;
+ position: absolute;
+ top: 0;
+ width: 100%;
+ height: 100%;
+
+ } */
+
+.imagenEmpresa {
+  height: 50vh;
+  overflow: hidden;
+  object-fit: cover;
+  
+}
+
+
+.seccionEmpresaConBs h2 {
+  font-size: 2em;
+  text-align: center;
+  color: rgb(241, 41, 41);
+  /* text-transform: uppercase; */
+  font-weight: bold;
+}
+
+.seccionEmpresaConBs p {
+  font-size: 1em;
+  /* text-align: center; */
+  color:white;
+  /* text-transform: uppercase; */
+  font-weight: bold;
+
+}
+/*-----------------------------------sección Empresa con BS--------------------------*/
+
+/*-----------------------------------Inicio GRID de sección Empresa ANTES--------------------------*/
+/* .grid{
   display: grid;
 
-  /* background-color: rgb(226, 213, 209); */
+
   grid-template-columns: 1fr ;
   grid-template-rows: 60px 790px 60px;
   grid-template-areas: "gridHeader"
@@ -167,20 +226,13 @@ grid-template-areas: "headerIndex"
   position: relative;
   text-align: center;
   margin-top: 15px;
-  /* color: whitesmoke; */
+
   color: #a00d08df;
   margin-bottom: 1rem;
 }
 
 .fotoSeccionEmpresa{
-    /* display:flex; */
-  /* grid-area: fotoSeccionEmpresa;
-  background: url("../imagenes/personaGeo.jpg");
-  background-size: 100% 100%;
-  object-fit: cover;
-  object-position: center;
-  background-repeat:no-repeat;
-  overflow: hidden; */
+
     grid-area: fotoSeccionEmpresa;
     position: relative; 
     background: url("../imagenes/personaGeo.jpg");
@@ -229,7 +281,7 @@ grid-template-areas: "headerIndex"
   color: rgba(245, 245, 245, 0.863);
   padding-left: 3rem;
   padding-right: 5rem;
-  /* font-family: ManifaPro2-Light, Frutiger, Muna, Helvetica, Arial, sans-serif; */
+
 }
 
 .vision {
@@ -286,13 +338,13 @@ grid-template-areas: "headerIndex"
 
 .footergrid{
   grid-area: footer;
-}
-/*-------------------------------Finalización GRID de sección "Empresa"---------------------------*/
+} */
+/*-------------------------------Finalización GRID de sección "Empresa ANTES"---------------------------*/
 
 
 
 /* -------------------------INICIO GRID---Sección "Servicio"-----------------------------------*/
-
+/* 
 .containerServicio{
   display: grid;
   background-image:linear-gradient(to right, rgb(149, 149, 149), #a00d08 99%);
@@ -365,6 +417,27 @@ grid-template-areas: "headerIndex"
 .footerServicio{
   grid-area: footerServicio;
  
+} */
+.claseImagenServicio{
+  max-width: 100%;
+}
+
+.gallery{
+  /* background-color: indianred; */
+  padding: 80px 0;
+}
+
+.gallery img {
+  cursor: pointer;
+  width: 100%;
+}
+
+.gallery p {
+  width: 100%;
+}
+
+.gallery h2 {
+  width: 100%;
 }
 
 /* -------------------------FINALIZACIÓN GRID---Sección "Servicio"-----------------------------------*/
@@ -384,7 +457,7 @@ grid-template-areas: "headerIndex"
 .fondoContacto main,header{
   position: relative;
 }
-.fondoContacto::before {
+/* .fondoContacto::before {
   content: "";
   position: absolute;
   top: 0px;
@@ -392,18 +465,23 @@ grid-template-areas: "headerIndex"
   bottom: 0px;
   left: 0px;
   background-color: rgba(0,0,0,0.5);
-}
+  z-index: -1;
+} */
 
+.iconosColor {
+  z-index: 20;
+}
 
 
 /* ..............................INICIO GRID---Sección "Equipos"..........................*/
 
+/* 
 .containerEquipos{
   display: grid;
   border: 5px solid black;
   background-image:linear-gradient(to right, rgb(149, 149, 149), #a00d08 99%);
 
-  /* background-color: rgb(226, 213, 209); */
+
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 60px 300px 300px 300px 60px;
   grid-template-areas: "headerEquipo headerEquipo headerEquipo"
@@ -527,8 +605,84 @@ animation: desplazamientoPic1 1s ;
     to {
       transform: scale(2) translateX(-240px) translateY(-150px);
     }  
-  }
+  } */
 
 /* ..............................FINALIZACIÓN GRID---Sección "Equipos"..........................*/
+
+
+/* .............................Sección "Equipos" CON BS..........................*/
+
+
+
+
+/* .............................FINALIZACIÓN Sección "Equipos" CON BS..........................*/
+
+.iconoSize {
+  font-size: 2.8rem;
+}
+
+.listaSinPuntos {
+  list-style: none;
+  text-align: center;
+} 
+
+/* .carousel-inner > .carousel-item > img {
+  width: 50%;
+  height: auto;
+} */
+
+
+
+#carouselExampleControls .carousel-item img {
+  object-fit: cover;
+  object-position: center;
+  height: 85vh;
+  overflow: hidden;
+}
+
+#carouselExampleControls .carousel-item::before {
+ content: "";
+ background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,0.5));
+display: block;
+position: absolute;
+top: 0;
+width: 100vw;
+height: 100vh;
+}
+
+/* .fotoIndexConBs {
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+} */
+
+/* .fotoIndexConBs {
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+} */
+
+.mainIndex {
+  position: relative;
+  background: url(../imagenes/uct5c.png);
+  min-height: 86vh;
+  object-fit: cover;
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  padding: 280px 0 220px;
+}
+
+.mainIndex h2 {
+  font-size: 2.6em;
+  text-align: center;
+  color: #dcdde1;
+  /* text-transform: uppercase; */
+  font-weight: bold;
+}
+
 
 

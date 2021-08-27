@@ -5,11 +5,154 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-    <link rel="stylesheet" href="../estilos/styles.css">
-</head>
 
-<body class="fondoContacto">
-          <header>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="../estilos/styles.css">
+
+</head>
+<body class="d-flex flex-column min-vh-100 fondoContacto">
+
+<!-- <body class="fondoContacto"> -->
+      <!--  -------------------------------------Navbar con Bootstrap---------------------------------------- -->
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img class="logo"   src="../imagenes/images.png" width="130px" alt="fotoLogo"/></a>
+    
+          
+    
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="empresa.html">Empresa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="servicios.html">Servicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="equipos.html">Equipos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+    
+          </div>
+        </div>
+      </nav>
+
+      <!-- Section: Contact v.1 -->
+<div class="container">
+<section class="my-5">
+  <!-- Grid row -->
+  <div class="row">
+
+    <!-- Grid column -->
+    <div class="col-lg-5 mb-lg-0 mb-4 mt-5 p-4">
+
+      <!-- Form with header -->
+      <div class="card">
+        <div class="card-body">
+          <!-- Header -->
+          <div class="form-header blue accent-1">
+            <h3 class="mt-2"><i class="fas fa-envelope"></i> Escribinos:</h3>
+          </div>
+
+          <!-- Body -->
+          <div class="md-form">
+            <i class="fas fa-user prefix grey-text"></i>
+            <input type="text" id="form-name" class="form-control">
+            <label for="form-name">Nombre</label>
+          </div>
+          <div class="md-form">
+            <i class="fas fa-envelope prefix grey-text"></i>
+            <input type="text" id="form-email" class="form-control">
+            <label for="form-email">Email</label>
+          </div>
+          <div class="md-form">
+            <i class="fas fa-tag prefix grey-text"></i>
+            <input type="text" id="form-Subject" class="form-control">
+            <label for="form-Subject">Asunto</label>
+          </div>
+          <div class="md-form">
+            <i class="fas fa-pencil-alt prefix grey-text"></i>
+            <textarea id="form-text" class="form-control md-textarea" rows="3"></textarea>
+            <label for="form-text">Mensaje</label>
+          </div>
+          <div class="text-center">
+            <button class="btn btn-primary">Enviar</button>
+          </div>
+        </div>
+      </div>
+      <!-- Form with header -->
+
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-lg-7">
+
+      <!--Google map NO FUNCIONA-->
+
+      <!-- <div id="map-container-section" class="z-depth-1-half map-container-section mb-4" style="height: 400px">
+        <iframe src="https://maps.google.com/maps?q=Manhatan&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0"
+          style="border:0" allowfullscreen></iframe>
+      </div> -->
+
+      <!-- Buttons-->
+      
+      <div class="row text-center mt-5">
+        <div class="col-md-4">
+          <a class="btn-floating blue accent-1">
+            <div class="iconoSize">
+            <i class="bi bi-geo-alt-fill"></i>
+            <!-- <i class="fas fa-map-marker-alt"></i> -->
+            </div>
+          </a>
+          <p class="text-light">Hipólito Yrigoyen 5045, CP:9000</p>
+          <p class="mb-md-0 text-light">Argentina</p>
+        </div>
+        <div class="col-md-4">
+          <a class="btn-floating blue accent-1">
+            <div class="iconoSize">
+            <i class="bi bi-telephone-fill"></i>
+            <!-- <i class="fas fa-phone"></i> -->
+            </div>
+          </a>
+          <p class="text-light">+ 54 297 4480001 / 4480309</p>
+          
+        </div>
+        <div class="col-md-4">
+          <a class="btn-floating blue accent-1">
+            <div class="iconoSize">
+            <i class="bi bi-envelope-fill"></i>
+            <!-- <i class="fas fa-envelope"></i> -->
+            </div>
+          </a>
+          <p class="text-light">info@geopatagonia.com.ar</p>
+    
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- Grid column -->
+
+  </div>
+  <!-- Grid row -->
+
+</section>
+</div>
+<!-- Section: Contact v.1 -->
+
+          <!-- <header>
             <img class="logo"   src="../imagenes/images.png" width="130px" alt="fotoLogo"/>
           <nav >
               <ul class="nav_links">
@@ -32,8 +175,11 @@
             </ul>
           </nav>
 
-          </header>
-  <main>
+          </header> -->
+
+
+          <!-- --------------------Asi lo tenia antes al formulario--------------------------------------------- -->
+  <!-- <main class="text-light">
     <br>
     <h1>Contacto</h1>
     <br>
@@ -86,10 +232,69 @@
            <input type="submit" value="Enviar">
     </fieldset>
 
-    </form>
+    </form> -->
 
   </main>
-    <footer class="footer footer footer--posicionDistinta";>Av Hipólito Yrigoyen 5045, Comodoro Rivadavia, Chubut, Argentina</footer>
+
+ <!-- ---------------------------FOOTER CON BS ------------------------->
+
+  <footer class="mt-auto bg-dark text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <span>geopatagonia SRL</span>
+      <!-- <p>geopatagonia SRL</p> -->
+      <!-- Facebook -->
+      <!-- <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a> -->
+
+      <!-- Twitter -->
+      <!-- <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a> -->
+
+      <!-- Google -->
+      <!-- <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-google"></i
+      ></a> -->
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+        <i class="bi bi-instagram"></i>
+        <!-- <i class="fab fa-instagram"></i> -->
+    
+      </a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+        <i class="bi bi-linkedin"></i>
+        <!-- <i class="fab fa-linkedin-in"></i -->
+      </a>
+
+      <!-- Github -->
+      <!-- <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-github"></i
+      ></a> -->
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2021 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/">Baloox</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+  
+
+<!-- End of .container -->
+    <!-- <footer class="footer footer footer--posicionDistinta";>Av Hipólito Yrigoyen 5045, Comodoro Rivadavia, Chubut, Argentina</footer> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 
   </body>
 </html>

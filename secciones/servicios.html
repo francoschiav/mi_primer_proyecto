@@ -5,37 +5,108 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    
     <link rel="stylesheet" href="../estilos/styles.css">
 
 </head>
 
-<body class="containerServicio">
+<body>
 
-<header class="headerServicio">    <!--clase para usarla en grid -->
-                          
-          <img class="logo"   src="../imagenes/images.png" width="130px" alt="fotoLogo"/>
-              <nav >
-                  <ul class="nav_links">
-                        <li>
-                          <a href="../index.html">Inicio</a>
-                        </li>
-                        <li>
-                          <a href="empresa.html">Empresa</a>
-                        </li>
-                        <li>
-                          <a href="servicios.html">Servicios</a>
-                        </li>
-                        <li>
-                          <a href="equipos.html">Equipos</a>
-                      </li>
-                        <li>
-                          <a href="contacto.html">Contacto</a>
-                        </li>
-                </ul>
-              </nav>
-</header>
 
-          <div class="infoServicioCoiledTubing">
+    <!--  -------------------------------------Navbar con Bootstrap---------------------------------------- -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img class="logo"   src="../imagenes/images.png" width="130px" alt="fotoLogo"/></a>
+  
+        
+  
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="empresa.html">Empresa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="servicios.html">Servicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="equipos.html">Equipos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+  
+        </div>
+      </div>
+    </nav>
+
+    <!-- --------------------------------SECCION CON BS ------------------------------------------->
+<section class="gallery min-vh-100 bg-dark">
+  <div class="container text-white">
+
+    <div class="row p-2">
+      <div class="col-sm-12 col-md-6">
+        <img src="../imagenes/UCT-5A.png" class="gallery-item rounded claseImagenServicio" alt="...">
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <h2 class="pt-2">Coiled Tubing</h2>
+        <p class="gallery-item claseImagenServicio">
+          Los equipos de Coiled Tubing de Geopatagonia son unidades de mucha versatilidad que permiten realizar distintos operaciones como: abandono de pozos, limpieza de inyectores, lavado de arenas, entre otros. 
+          El trabajo consta en la inyección y recuperación de una tubería flexible y continúa por el interior de una línea de mayor diámetro de Tubing o Casing. 
+          Además permite realizar trabajos en pozos surgentes manteniendo el control absoluto en todo momento e inyectar distintos tipos de fluidos por el interior de la tubería flexible.
+          Cabe destacar que la unidad de Coiled Tubing puede trabajar, tanto en conjunto con un equipo de Workover, Pulling o Wireline, como sin equipo/s en locación. 
+          Son unidades de fácil transporte y con equipamiento propio para realizar operaciones en horarios nocturnos.
+
+          </p>
+      </div>
+    </div>  
+
+    <div class="row p-2">
+      <div class="col-sm-12 col-md-6">
+        <img src="../imagenes/CEYF.png" class="gallery-item rounded claseImagenServicio" alt="...">
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <h2 class="pt-2">Cementación y Estimulación</h2>
+        <p class="gallery-item claseImagenServicio"> 
+          Contamos con equipamientos y personal calificado en la industria de la Cementación Petrolera, nuestra experiencia abarca desde cementaciones de secundarias, ya sean tapones balanceados o cementaciones a presión, hasta cementaciones primarias tanto de cañerías guías, intermedias y aislaciones de alta complejidad.
+          Estimulación: tenemos una amplia experiencia en bombeo de ácidos y solventes en las distintas zonas de la cuenca.
+       </p>
+      </div>
+     </div>  
+
+     <div class="row p-2">
+      <div class="col-sm-12 col-md-6">
+        <img src="../imagenes/cc-03.jpg" class="gallery-item rounded claseImagenServicio" alt="...">
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <h2 class="pt-2">Control Geológico</h2>
+        <p class="gallery-item claseImagenServicio">
+          La unidad de Control Geológico puede monitorear las manifestaciones del pozo durante la perforación del mismo, estos hechos se producen sólo en esta etapa y son únicos e irrepetibles en el tiempo.
+          
+          Datos y observaciones adquiridas en forma contínua, como litología atravesada, medición de gas y su correspondiente cromatografía, medición de gases no deseados, detección de niveles petroleros o gasíferos, permiten un conocimiento previo de la potencialidad del pozo antes de las operaciones de perfilaje.
+          
+          Tanto el Control Geológico como la optimización de los parámetros de la perforación contribuyen a prevenir problemas propios de la actividad, esto se traduce en reducción de los costos del pozo y en un aumento de la seguridad de la operación.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+<!-- --------------------------------FINALIZACIÓN SECCION CON BS ------------------------------------------->
+
+
+ <!-- --------------------------------SECCION ANTES ------------------------------------------->
+          <!-- <div class="infoServicioCoiledTubing">
                 <h2 class="tituloCt">Coiled Tubing</h2>
                 <br>
                   <p>Los equipos de Coiled Tubing de Geopatagonia son unidades de mucha versatilidad que permiten realizar distintos operaciones como: abandono de pozos, limpieza de inyectores, lavado de arenas, entre otros. </p>
@@ -76,10 +147,67 @@
           
           <div class="fotoServicio3">
          
-          </div>
+          </div> -->
 
-   <footer class="footerServicio";>Av Hipólito Yrigoyen 5045, Comodoro Rivadavia, Chubut, Argentina</footer>
+          <!-- --------------------------------FINALIZACIÓN SECCION ANTES ------------------------------------------->
+
+
+ <!-- ---------------------------FOOTER CON BS ------------------------->
+
+ <footer class="mt-auto bg-dark text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <span>geopatagonia SRL</span>
+      <!-- <p>geopatagonia SRL</p> -->
+      <!-- Facebook -->
+      <!-- <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a> -->
+
+      <!-- Twitter -->
+      <!-- <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a> -->
+
+      <!-- Google -->
+      <!-- <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-google"></i
+      ></a> -->
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+        <i class="bi bi-instagram"></i>
+        <!-- <i class="fab fa-instagram"></i> -->
+    
+      </a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+        <i class="bi bi-linkedin"></i>
+        <!-- <i class="fab fa-linkedin-in"></i -->
+      </a>
+
+      <!-- Github -->
+      <!-- <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-github"></i
+      ></a> -->
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2021 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/">Baloox</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+   <!-- <footer class="footerServicio";>Av Hipólito Yrigoyen 5045, Comodoro Rivadavia, Chubut, Argentina</footer> -->
   
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 
 </body>
 </html>

@@ -5,12 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Equipos</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
     <link rel="stylesheet" href="../estilos/styles.css">
 </head>
 
-<body class="containerEquipos">
+<body >
+<!-- <body class="containerEquipos"> -->
+ <!--  -------------------------------------Navbar con Bootstrap---------------------------------------- -->
+ <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img class="logo"   src="../imagenes/images.png" width="130px" alt="fotoLogo"/></a>
 
-<header class="headerEquipo">
+    
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="../index.html">Home</a> 
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="empresa.html">Empresa</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="servicios.html">Servicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="equipos.html">Equipos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacto.html">Contacto</a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+<!-- <header class="headerEquipo">
   <img class="logo"   src="../imagenes/images.png" width="130px" alt="fotoLogo"/>
 <nav >
     <ul class="nav_links">
@@ -32,9 +69,9 @@
      
    </ul>
 </nav>
-</header>
-
-    <div class="equipoUct5">
+</header> -->
+<!-------------------------------------------------- SECCION EQUIPOS ANTES ------------------>
+    <!-- <div class="equipoUct5">
         <h2>Unidad de Coiled Tubing UCT-05</h2>
         <ul>
           <li>Marca: Jereh</li>
@@ -72,10 +109,155 @@
     <div class="seccionEquiposUct4y3"> </div>
 
     <div class="seccionEquiposUct1"> </div>
-  
+   -->
 
+<!----------------------------------------- FINALIZACIÓN SECCION EQUIPOS ANTES ------------------>
     
-    
+<!------------ SECCION EQUIPOS CON BS ------------------>
+
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+              <div class="carousel-item img-fluid active ">
+                <img src="../imagenes/uct5b.png" class="d-block w-100" alt="...">
+
+                
+                <div class="carousel-caption d-none d-md-block">
+                      <h2 >UCT-05</h2>
+                      <dl class="row">
+                      <!-- <ul class="listaSinPuntos"> -->
+                        <dt class="col-sm-3 col-md-5">Marca:</dt>
+                        <dd class="col-sm-9 col-md-7">Jereh</dd>
+
+                        <dt class="col-sm-3 col-md-5" >Capcidad de Almacenaje:</dt>
+                        <dd class="col-sm-9 col-md-7">5.000 mts para CT de 2 3/8" (puede tener tubería de 1 1/2" a 3 1/2"</dd>
+
+                        <dt class="col-sm-3 col-md-5">Inyector:</dt>
+                        <dd class="col-sm-9 col-md-7">Marca Jereh, con capacidad de tracción de 100.000 lbs PULL / 50.000 lbs PUSH</dd>
+
+                        <dt class="col-sm-3 col-md-5" >Velocidad de funcionamiento:</dt>
+                        <dd class="col-sm-9 col-md-7"> 52 mts/min </dd>
+
+                        <dt class="col-sm-3 col-md-5">Radio de curvatura:</dt>
+                        <dd class="col-sm-9 col-md-7">100°</dd>
+                        <!-- <li>Marca: Jereh</li>
+                        <li>Capcidad de Almacenaje: 5.000 mts para CT de 2 3/8" (puede tener tubería de 1 1/2" a 3 1/2"</li>
+                        <li>Inyector: Marca Jereh, con capacidad de tracción de 100.000 lbs PULL / 50.000 lbs PUSH</li>
+                        <li>Velocidad de funcionamiento: 52 mts/min</li>
+                        <li>Radio de curvatura: 100°</li>
+                      </ul> -->
+                      </dl>
+                </div>
+              
+
+              </div>
+              <div class="carousel-item">
+                <img src="../imagenes/uct3soleado.jpeg" class="d-block w-100 " alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h2>UCT-03 y UCT-04</h2>
+                  <ul class="listaSinPuntos">
+                    <li>Marca: DA Manufacturing</li>
+                    <li>Capcidad de Almacenaje: 3.800 mts para CT de 1 1/2" y 2.500 mts para CT de 2"</li>
+                    <li>Inyector: Marca DA Manufacturing, con capacidad de tracción de 40.000 lbs PULL / 20.000 lbs PUSH</li>
+                    <li>Velocidad de funcionamiento: 60 mts/min</li>
+                    <li>Radio de curvatura: 90°</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../imagenes/UCT1.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h2>UCT-01</h2>
+                  <ul class="listaSinPuntos">
+                    <li>Marca: FCI-Americano</li>
+                    <li>Capcidad de Almacenaje: 2.800 mts para CT de 1 1/2" y 1.600 mts para CT de 2"</li>
+                    <li>Inyector: Marca VITA-30/1,5, con capacidad de tracción de 30.000 lbs PULL / 15.000 lbs PUSH</li>
+                    <li>Velocidad de funcionamiento: 60 mts/min</li>
+                    <li>Radio de curvatura: 1,27 mtsd</li>
+                  </ul>
+                </div>
+              </div>
+      </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div> 
+
+
+<!-- 
+<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+     
+      <img src="../imagenes/uct5b.png" class="d-block w-100" alt="..." style="max-height: 100vh;">
+  
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Unidad de Coiled Tubing UCT-05</h5>
+        <div>
+          <ul class="listaSinPuntos">
+            <li>Marca: Jereh</li>
+            <li>Capcidad de Almacenaje: 5.000 mts para CT de 2 3/8" (puede tener tubería de 1 1/2" a 3 1/2"</li>
+            <li>Inyector: Marca Jereh, con capacidad de tracción de 100.000 lbs PULL / 50.000 lbs PUSH</li>
+            <li>Velocidad de funcionamiento: 52 mts/min</li>
+            <li>Radio de curvatura: 100°</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="../imagenes/fotoUct3y4.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Unidad de Coiled Tubing UCT-03 y UCT-04</h5>
+        <div>
+          <ul class="listaSinPuntos">
+            <li>Marca: DA Manufacturing</li>
+            <li>Capcidad de Almacenaje: 3.800 mts para CT de 1 1/2" y 2.500 mts para CT de 2"</li>
+            <li>Inyector: Marca DA Manufacturing, con capacidad de tracción de 40.000 lbs PULL / 20.000 lbs PUSH</li>
+            <li>Velocidad de funcionamiento: 60 mts/min</li>
+            <li>Radio de curvatura: 90°</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="../imagenes/fotoUct1.jpeg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Unidad de Coiled Tubing UCT-01</h5>
+        <div>
+          <ul class="listaSinPuntos">
+            <li>Marca: FCI-Americano</li>
+            <li>Capcidad de Almacenaje: 2.800 mts para CT de 1 1/2" y 1.600 mts para CT de 2"</li>
+            <li>Inyector: Marca VITA-30/1,5, con capacidad de tracción de 30.000 lbs PULL / 15.000 lbs PUSH</li>
+            <li>Velocidad de funcionamiento: 60 mts/min</li>
+            <li>Radio de curvatura: 1,27 mtsd</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  </div> -->
+
+
+
+<!------------FINALIZACIÓN SECCION EQUIPOS CON BS ------------------>
+
 
     <!--  
     <table style="border: 1px solid black;">
@@ -105,7 +287,65 @@
         </tr>
       </table>
       -->
-      <footer class="footerEquipos";>Av Hipólito Yrigoyen 5045, Comodoro Rivadavia, Chubut, Argentina</footer>
+<!-- ---------------------------------------FOOTER CON BS ----------------------------------------------------->
+      <footer class="mt-auto bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <span>geopatagonia SRL</span>
+            <!-- <p>geopatagonia SRL</p> -->
+            <!-- Facebook -->
+            <!-- <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-facebook-f"></i
+            ></a> -->
+      
+            <!-- Twitter -->
+            <!-- <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-twitter"></i
+            ></a> -->
+      
+            <!-- Google -->
+            <!-- <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-google"></i
+            ></a> -->
+      
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+              <i class="bi bi-instagram"></i>
+              <!-- <i class="fab fa-instagram"></i> -->
+          
+            </a>
+      
+            <!-- Linkedin -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+              <i class="bi bi-linkedin"></i>
+              <!-- <i class="fab fa-linkedin-in"></i -->
+            </a>
+      
+            <!-- Github -->
+            <!-- <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-github"></i
+            ></a> -->
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2021 Copyright:
+          <a class="text-white" href="https://mdbootstrap.com/">Baloox</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+
+      <!-- <footer class="footerEquipos";>Av Hipólito Yrigoyen 5045, Comodoro Rivadavia, Chubut, Argentina</footer> -->
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+        <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script> -->
 </body>
 </html>
 

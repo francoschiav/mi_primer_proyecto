@@ -5,13 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GeopatagoniaSRL</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="estilos/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
 </head>
 
-<body class="containerIndex">
+<body class="vh-100">
+  <!--  -------------------------------------Navbar con Bootstrap---------------------------------------- -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img class="logo"   src="imagenes/images.png" width="130px" alt="fotoLogo"/></a>
+
+      
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="secciones/empresa.html">Empresa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="secciones/servicios.html">Servicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="secciones/equipos.html">Equipos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="secciones/contacto.html">Contacto</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+<!-- <body class="vh-100">
+  <header>
+    <div class="container navbar">
+      <div class="row justify-content-between align-items-center w-100">
+          <img class="logo col-sm-4"   src="imagenes/images.png" width="130px" alt="fotoLogo"/>
+          <nav class="col-sm-6 col-md-4 d-flex justify-content-between">
+            <a href="index.html">Inicio</a>
+            <a href="secciones/servicios.html">Servicios</a>
+            <a href="secciones/equipos.html">Equipos</a>
+            <a href="secciones/contacto.html">Contacto</a>
+          </nav>
+        </div>
+    </div>
+
+  </header> -->
+
+
+<!-- <body class="containerIndex">
 
     <header class="headerIndex">
          <img class="logo"   src="imagenes/images.png" width="130px" alt="fotoLogo"/>
@@ -35,11 +88,33 @@
             
           </ul>
       </nav>
-    </header>
+    </header> -->
+<section class="mainIndex">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <h2>Una empresa de servicios para la industria petrolera nacida en la Patagonia, Argentina</h2>
+     
+      </div>
 
-  
+    </div>
 
-    <div class="fondoImagenIndex">
+  </div>
+
+</section>
+
+
+<!-- <div class="container p-0 m-0">
+    <div class="row">
+      <div class="col-12">
+      
+          <img src="../imagenes/uct5c.png" class="img-fluid fotoIndexConBs" alt="fotoindex">      
+
+      </div>
+    </div>
+</div> -->
+
+    <!-- <div class="fondoImagenIndex">
               <div class="slogan">
                 Una empresa de servicios para la industria petrolera nacida en la Patagonia, Argentina
               </div>
@@ -48,10 +123,67 @@
                 Desde 1992 brindando colaboración y asesoramiento a las Empresas Operadoras, en las etapas de Exploración, Perforación, Desarrollo,
                 Producción, Cementación y Abandono de Pozos.
               </div>
-     </div>
+     </div> -->
 
+<!-- ---------------------------------------FOOTER CON BS ----------------------------------------------------->
+<footer class="mt-auto bg-dark text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <span>geopatagonia SRL</span>
+      <!-- <p>geopatagonia SRL</p> -->
+      <!-- Facebook -->
+      <!-- <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a> -->
 
-    <footer class="footerIndex">Av Hipólito Yrigoyen 5045, Comodoro Rivadavia, Chubut, Argentina</footer>
+      <!-- Twitter -->
+      <!-- <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a> -->
+
+      <!-- Google -->
+      <!-- <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-google"></i
+      ></a> -->
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+        <i class="bi bi-instagram"></i>
+        <!-- <i class="fab fa-instagram"></i> -->
+    
+      </a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+        <i class="bi bi-linkedin"></i>
+        <!-- <i class="fab fa-linkedin-in"></i -->
+      </a>
+
+      <!-- Github -->
+      <!-- <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-github"></i
+      ></a> -->
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2021 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/">Baloox</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+    <!-- <footer class="footerIndex">Av Hipólito Yrigoyen 5045, Comodoro Rivadavia, Chubut, Argentina</footer> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script> -->
     
 </body>
 </html>

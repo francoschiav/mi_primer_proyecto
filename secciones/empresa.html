@@ -5,40 +5,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Empresa</title>
-    <link rel="stylesheet" href="../estilos/styles.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    
+<link rel="stylesheet" href="../estilos/styles.css">
+
 </head>
 
-<body class="grid">
+<body>
+  <!--  -------------------------------------Navbar con Bootstrap---------------------------------------- -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img class="logo"   src="../imagenes/images.png" width="130px" alt="fotoLogo"/></a>
 
-    <header class="gridHeader">
-         <img class="logo"   src="../imagenes/images.png" width="130px" alt="fotoLogo"/>
-      <nav >
-           <ul class="nav_links">
-              <li>
-                <a href="../index.html">Inicio</a>
-              </li>
-              <li>
-                <a href="empresa.html">Empresa</a>
-              </li>
-              <li>
-                <a href="servicios.html">Servicios</a>
-              </li>
-              <li>
-                <a href="equipos.html">Equipos</a>
-              </li>
-              <li>
-                <a href="contacto.html">Contacto</a>
-              </li>
+      
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="empresa.html">Empresa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="servicios.html">Servicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="equipos.html">Equipos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+<!-- ---------------------------------SECCION CON BS ---------------------------------->
+<section class="bg-dark">
+  <div class="container-fluid m-0 p-0">
+    <div class="row">
+      <img src="../imagenes/personaGeo.jpg" class="imagenEmpresa" alt="...">
+    </div>
+</div>
+  <div class="container pt-3">
+    
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <h2 class="text-white">Acerca de nosotros</h2>
+        <p class="text-justify text-white">Geopatagonia se constituye en Diciembre de 1992 cuando un grupo de Geólogos y Técnicos especializados deciden iniciar un emprendimiento privado. Durante su trayectoria, la empresa se ha consolidado en el mercado, habiendo diversificado sus servicios y clientes, apostando a la constante renovación tecnológica de equipos especiales. Con base en Comodoro Rivadavia (Chubut) y Pico Truncado (Santa Cruz) cuenta con una avanzada tecnología en Unidades de Coiled Tubing, equipos de Cementación y Estimulación, cabinas de Control Geológico, Abandono de Pozos, Equipos y Herramientas para Entubación de Pozos.</p>
+      </div>
+    </div>
+
+      <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h2 class="text-white">Misión</h2>
+            <p class="text-justify text-white" >Responder en tiempo y con calidad las necesidades de nuestros clientes, respetando el medio ambiente y a su personal; con rentabilidad sustentable para que socios y colaboradores tengan la posibilidad de desarrollar sus competencias profesionales.</p>
+          </div>
+      </div>
+      
+      <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h2 class="text-white">Visión</h2>
+            <p class="text-justify text-white">Posicionarnos como empresa líder en nuestros servicios; con crecimiento sostenido acompañado de una rentabilidad que permita satisfacer plenamente a sus colaboradores, socios y clientes en que actúa. Actuar con fuerte compromiso de ciudadanía global.</p>
+          </div>
+       </div>
+
+       <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h2 class="text-white">SMAC</h2>
+          <p class="text-justify text-white">Geopatagonia cuenta con un sistema de Gestión Integrado de Calidad, Medio Ambiente, Seguridad y Salud Ocupacional bajo las normas ISO-IRAM 9001 y 14001 (Certificadas) y OHSAS 18001 (implementadas), dando cumplimiento a las Normas de Seguridad y de Protección Ambiental, y toda la Legislación de Aplicación vigente.</p>
+        </div>
+      </div>
+      
+  </div>
+
+</section>
+
+<!-- ---------------------------------FINALIZACIÓN SECCION CON BS ---------------------------------->
             
-          </ul>
-      </nav>
-    </header>
-
-
-            
-
-
-              <div class="fotoSeccionEmpresa"> 
+<!-- ---------------------------------ANTES ---------------------------------->
+              <!-- <div class="fotoSeccionEmpresa"> 
                         <div class="nosotros">
                            
                                   <h2 class="tituloNosotros">Acerca de nosotros </h2>  
@@ -71,11 +124,69 @@
                           <p>Geopatagonia cuenta con un sistema de Gestión Integrado de Calidad, Medio Ambiente, Seguridad y Salud Ocupacional bajo las normas ISO-IRAM 9001 y 14001 (Certificadas) y OHSAS 18001 (implementadas), dando cumplimiento a las Normas de Seguridad y de Protección Ambiental, y toda la Legislación de Aplicación vigente.</p>
                           
                     </div>
-              </div>
+              </div> -->
 
-    <div class="footergrid">
+              <!-- ---------------------------------FINALIZACIÓN ANTES ---------------------------------->
+
+              <!-- ---------------------------------------FOOTER CON BS ----------------------------------------------------->
+      <footer class="mt-auto bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <span>geopatagonia SRL</span>
+            <!-- <p>geopatagonia SRL</p> -->
+            <!-- Facebook -->
+            <!-- <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-facebook-f"></i
+            ></a> -->
+      
+            <!-- Twitter -->
+            <!-- <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-twitter"></i
+            ></a> -->
+      
+            <!-- Google -->
+            <!-- <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-google"></i
+            ></a> -->
+      
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+              <i class="bi bi-instagram"></i>
+              <!-- <i class="fab fa-instagram"></i> -->
+          
+            </a>
+      
+            <!-- Linkedin -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+              <i class="bi bi-linkedin"></i>
+              <!-- <i class="fab fa-linkedin-in"></i -->
+            </a>
+      
+            <!-- Github -->
+            <!-- <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-github"></i
+            ></a> -->
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2021 Copyright:
+          <a class="text-white" href="https://mdbootstrap.com/">Baloox</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+
+
+    <!-- <div class="footergrid">
           <footer class="footer footer--posicionDistinta";>Av Hipólito Yrigoyen 5045, Comodoro Rivadavia, Chubut, Argentina</footer>
-    </div>
+    </div> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 
     </body>
 </html>
