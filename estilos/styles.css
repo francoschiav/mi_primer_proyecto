@@ -95,8 +95,7 @@ border-radius: 40em;
 .imagenEmpresa {
   height: 50vh;
   overflow: hidden;
-  object-fit: cover;
-  
+  object-fit: cover; 
 }
 
 

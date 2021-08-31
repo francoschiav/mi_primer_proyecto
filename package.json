@@ -1,0 +1,25 @@
+{
+  "name": "mi_primer_proyecto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/francoschiav/mi_primer_proyecto.git",
+    "build-css": "node-sass --include-path scss scss/style.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "Franco Schiavoni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/francoschiav/mi_primer_proyecto/issues"
+  },
+  "homepage": "https://github.com/francoschiav/mi_primer_proyecto#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.12"
+  }
+}
