@@ -1,0 +1,19 @@
+//INDEX
+.mainIndex {
+    position: relative;
+    background: url(../imagenes/uct5c.png);
+    min-height: 86vh;
+    object-fit: cover;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    padding: 280px 0 220px;
+  }
+  
+  .mainIndex h2 {
+    font-size: 2.6em;
+    text-align: center;
+    color: #dcdde1;
+    font-weight: bold;
+  }

@@ -1,3 +1,9 @@
-h1 {
-    color:aquamarine
-}
+@import "globales";
+@import "variables";
+@import "componentes/footer";
+@import "componentes/header";
+@import "pages/index";
+@import "pages/contacto";
+@import "pages/empresa";
+@import "pages/equipos";
+@import "pages/servicios";

@@ -1,0 +1,21 @@
+// HEADER
+.logo{
+    cursor: pointer;
+  border-radius: 40em;
+  }
+
+  header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 0%;
+    background-color: #000000;
+  }
+
+  .letraNav {
+    font-weight: 500;
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
