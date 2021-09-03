@@ -1,5 +1,43 @@
+ //EMPRESA
 .imagenEmpresa {
     height: 50vh;
     overflow: hidden;
     object-fit: cover; 
   }
+ 
+#carouselExampleControls .carousel-item img {
+  object-fit: cover;
+  object-position: center;
+  height: 50vh;
+  overflow: hidden;
+}
+
+#carouselExampleControls .carousel-item::before {
+content: "";
+background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,0.5));
+display: block;
+position: absolute;
+top: 0;
+width: 100vw;
+height: 100vh;
+}
+
+.textoCarousel {
+  font-size: $FontSizeTituloH2;
+  text-align: center;
+  // color: #dcdde1; 
+  font-weight: bold;
+  margin-bottom: 10vh; 
+}
+
+//Cambiar luego a text-white
+.textoEmpresa {
+  color: whitesmoke;
+}
+
+.boxEmpresa {
+  @include estiloBox (groove,rgb(0, 255, 238))
+}
+
+
+

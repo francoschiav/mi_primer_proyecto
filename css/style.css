@@ -85,7 +85,7 @@ header {
 #carouselExampleControls .carousel-item img {
   object-fit: cover;
   object-position: center;
-  height: 85vh;
+  height: 50vh;
   overflow: hidden; }
 
 #carouselExampleControls .carousel-item::before {
@@ -96,6 +96,19 @@ header {
   top: 0;
   width: 100vw;
   height: 100vh; }
+
+.textoCarousel {
+  font-size: 2.6em;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10vh; }
+
+.textoEmpresa, .textoServicios {
+  color: whitesmoke; }
+
+.boxEmpresa {
+  border-style: groove;
+  border-color: #00ffee; }
 
 .claseImagenServicio {
   max-width: 100%; }
@@ -112,3 +125,6 @@ header {
 
 .gallery h2 {
   width: 100%; }
+
+.textoServicios {
+  border-style: groove; }
