@@ -1,7 +1,7 @@
 //SERVICIOS
-.claseImagenServicio{
-    max-width: 100%;
-  }
+// .claseImagenServicio{
+//     height: 60vh;
+//   }
 
   .gallery{
 
@@ -21,8 +21,5 @@
     width: 100%;
   }
 
-  .textoServicios {
-    @extend .textoEmpresa;
-    border-style:groove;
-}
+
   

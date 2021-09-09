@@ -31,13 +31,16 @@ height: 100vh;
 }
 
 //Cambiar luego a text-white
-.textoEmpresa {
-  color: whitesmoke;
+
+.imagenLogoEmpresa{
+  max-width: 30vh;
+  align-self: center;
 }
 
-.boxEmpresa {
-  @include estiloBox (groove,rgb(0, 255, 238))
+.titulosEmpresa{
+  font-weight: bold;
 }
+
 
 
 

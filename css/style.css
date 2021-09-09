@@ -11,6 +11,9 @@ html {
   font-weight: 400;
   height: 100%; }
 
+.iconoSize {
+  font-size: 2.8rem; }
+
 .logo {
   cursor: pointer;
   border-radius: 40em; }
@@ -58,7 +61,7 @@ header {
   z-index: 100; }
 
 .fondoContacto {
-  background: url(../imagenes/personalGeo7.png) no-repeat center center fixed;
+  background: url(../imagenes/paisajeCordillera.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -74,9 +77,6 @@ header {
   background-color: rgba(0,0,0,0.5);
   z-index: -1;
 } */
-.iconoSize {
-  font-size: 2.8rem; }
-
 .imagenEmpresa {
   height: 50vh;
   overflow: hidden;
@@ -103,15 +103,27 @@ header {
   font-weight: bold;
   margin-bottom: 10vh; }
 
-.textoEmpresa, .textoServicios {
-  color: whitesmoke; }
+.imagenLogoEmpresa {
+  max-width: 30vh;
+  align-self: center; }
 
-.boxEmpresa {
-  border-style: groove;
-  border-color: #00ffee; }
+.titulosEmpresa {
+  font-weight: bold; }
 
-.claseImagenServicio {
-  max-width: 100%; }
+.galeriaEquipos {
+  margin-top: 80px; }
+
+.tituloH2Equipos {
+  font-size: 2.6em;
+  text-align: center;
+  font-weight: bold;
+  color: #dcdde1; }
+
+.imgCtEquipos {
+  overflow: hidden; }
+
+.unicoDeCg {
+  align-content: space-between; }
 
 .gallery {
   padding: 80px 0; }
@@ -125,6 +137,3 @@ header {
 
 .gallery h2 {
   width: 100%; }
-
-.textoServicios {
-  border-style: groove; }
