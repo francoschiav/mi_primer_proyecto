@@ -107,14 +107,28 @@ header {
   max-width: 30vh;
   align-self: center; }
 
-.titulosEmpresa {
-  font-weight: bold; }
+.titulosH4 {
+  line-height: 26px;
+  font-size: 21px; }
+
+.parrafosP {
+  opacity: 0.8; }
+
+.bodyDelP {
+  color: #8d97ad;
+  background: #ffffff; }
+
+.iconosEmpresa {
+  color: #0d87e8; }
+
+.cardSinBorde {
+  border: none;
+  text-align: center; }
 
 .galeriaEquipos {
   margin-top: 80px; }
 
 .tituloH2Equipos {
-  font-size: 2.6em;
   text-align: center;
   font-weight: bold;
   color: #dcdde1; }

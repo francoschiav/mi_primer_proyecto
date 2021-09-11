@@ -37,10 +37,34 @@ height: 100vh;
   align-self: center;
 }
 
-.titulosEmpresa{
-  font-weight: bold;
+// .titulosEmpresa{
+//   font-weight: bold;
+// }
+
+.titulosH4{
+    line-height: 26px;
+    font-size: 21px;
+
+  }
+
+.parrafosP{
+  opacity: 0.8;
 }
 
+.bodyDelP{
+  color:#8d97ad;
+  background: #ffffff;
+}
+
+.iconosEmpresa{
+  color: $colorIconos;
+ 
+}
+
+.cardSinBorde{
+ border: none;
+ text-align: center;
+}
 
 
 
