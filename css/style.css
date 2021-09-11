@@ -128,10 +128,12 @@ header {
 .galeriaEquipos {
   margin-top: 80px; }
 
-.tituloH2Equipos {
+.tituloH3Equipos {
   text-align: center;
   font-weight: bold;
   color: #dcdde1; }
+  .tituloH3Equipos__fondoAzul {
+    background-color: #0d87e8; }
 
 .imgCtEquipos {
   overflow: hidden; }

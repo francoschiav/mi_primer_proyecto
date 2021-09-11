@@ -19,10 +19,13 @@
    margin-top: 80px;
 }
 
-.tituloH2Equipos{
+.tituloH3Equipos{
     text-align: center;
     font-weight: bold;
     color: $blancoTitulos;
+
+    &__fondoAzul{ background-color: $colorIconos;
+    }
 }
 .imgCtEquipos{
     overflow: hidden;
