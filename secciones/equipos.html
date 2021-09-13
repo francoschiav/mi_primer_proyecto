@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -52,16 +53,16 @@
 
 <!-- Pruba nuevo carousel -->
 <!-- COILED -->
-      <div class="container galeriaEquipos">
+      <div class="container galeriaEquipos " >
         <div class="jumbotron jumbotron-fluid">
           <div class="container">
-              <h1 class="display-4 text-light  pb-3">Equipos</h1>
+              <h1 class="display-4 text-light pb-3 " data-aos="fade-up">Equipos</h1>
           </div>
         </div>
         <div class="row">
-          <h3 class="tituloH3Equipos tituloH3Equipos__fondoAzul mb-3 ">Coiled Tubing</h3>
+          <h3 class="tituloH3Equipos tituloH3Equipos__fondoAzul mb-3 "data-aos="fade-left">Coiled Tubing</h3>
           <div class="col-lg-4 mt-2">
-            <div class="card bg-light h-100 bg-dark">
+            <div class="card bg-light h-100 bg-dark" data-aos="fade-left">
               <img
                 src="../imagenes/uct5b.png"
                 class="card-img-top"
@@ -78,7 +79,7 @@
           </div>
 
           <div class="col-lg-4 mt-2 ">
-            <div class="card bg-light h-100 bg-dark">
+            <div class="card bg-light h-100 bg-dark" data-aos="fade-left">
               <img
                 src="../imagenes/CR-03.jpeg"
                 class="card-img-top"
@@ -95,7 +96,7 @@
           </div>
 
           <div class="col-lg-4 mt-2 ">
-            <div class="card bg-light h-100 bg-dark">
+            <div class="card bg-light h-100 bg-dark"data-aos="fade-left">
               <img
                 src="../imagenes/BPR.jpg"
                 class="card-img-top"
@@ -115,11 +116,11 @@
 
 <!-- COILED -->
 <!-- CEYF -->
-      <div class="container galeriaEquipos">
+      <div class="container galeriaEquipos ">
         <div class="row">
-          <h3 class="tituloH3Equipos tituloH3Equipos__fondoAzul mb-3 ">Cementación y Estimulación</h3>
+          <h3 class="tituloH3Equipos tituloH3Equipos__fondoAzul mb-3 "data-aos="fade-right">Cementación y Estimulación</h3>
           <div class="col-lg-4 mt-2">
-            <div class="card bg-light h-100 bg-dark">
+            <div class="card bg-light h-100 bg-dark" data-aos="fade-right">
               <img
                 src="../imagenes/CR-04.png"
                 class="card-img-top"
@@ -136,7 +137,7 @@
           </div>
 
           <div class="col-lg-4 mt-2">
-            <div class="card bg-light h-100 bg-dark">
+            <div class="card bg-light h-100 bg-dark"data-aos="fade-right">
               <img
                 src="../imagenes/mix 2.jpg"
                 class="card-img-top"
@@ -164,7 +165,7 @@
           </div>
 
           <div class="col-lg-4 mt-2">
-            <div class="card bg-light h-100 bg-dark">
+            <div class="card bg-light h-100 bg-dark" data-aos="fade-right">
               <img
                 src="../imagenes/Bulk.png"
                 class="card-img-top"
@@ -218,11 +219,11 @@
       </div>
 <!-- CEYF -->
 <!-- CG -->
-<div class="container galeriaEquipos ">
+<div class="container galeriaEquipos">
   <div class="row d-flex justify-content-center">
-    <h3 class="tituloH3Equipos tituloH3Equipos__fondoAzul mb-3 ">Control Geológico</h3>
+    <h3 class="tituloH3Equipos tituloH3Equipos__fondoAzul mb-3 "data-aos="fade-left">Control Geológico</h3>
     <div class="col-lg-4 mt-2">
-      <div class="card bg-light bg-dark">
+      <div class="card bg-light bg-dark" data-aos="fade-left">
         <img
           src="../imagenes/CG101.jpg"
           class="card-img-top"
@@ -374,6 +375,15 @@
 
         <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script> -->
-</body>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration:3000,
+        mirror: true
+      });
+    </script>
+  
+  </body>
 </html>
 
