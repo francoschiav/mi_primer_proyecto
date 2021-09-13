@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="../css/style.css">
 
 </head>
@@ -60,7 +60,7 @@
 
       <div class="jumbotron jumbotron-fluid">
         <div class="container">
-            <h1 class="display-4 text-light ps-3 pb-3 animate__animated animate__fadeInLeft animate__slow ">Comunicate con nosotros</h1>
+            <h1 class="display-4 text-light ps-3 pb-3" data-aos="fade-up">Comunicate con nosotros</h1>
         </div>
       </div>
 
@@ -104,11 +104,11 @@
 
   <div class="row">
 
-    <div class="col-lg-7  animate__animated animate__fadeInUp animate__slow">
+    <div class="col-lg-7">
       <!-- Buttons-->
       <div class="row text-center ">
         
-        <div class="col-md-4">
+        <div class="col-md-4"data-aos="fade-left">
           <a class="btn-floating blue accent-1">
             <div class="iconoSize">
             <i class="bi bi-geo-alt-fill"></i>
@@ -118,7 +118,7 @@
           <p class="text-light">Hipólito Yrigoyen 5045, CP:9000, Argentina</p>
           <!-- <p class="mb-md-0 text-light">Argentina</p> -->
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4"data-aos="fade-right">
           <a class="btn-floating blue accent-1">
             <div class="iconoSize">
             <i class="bi bi-telephone-fill"></i>
@@ -129,7 +129,7 @@
           <p class="text-light mt-0">+ 54 297 4480309</p>
           
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4"data-aos="fade-left">
           <a class="btn-floating blue accent-1">
             <div class="iconoSize">
             <i class="bi bi-envelope-fill"></i>
@@ -193,7 +193,13 @@
   
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration:3000,
+        mirror: true
+      });
+    </script>
   </body>
 </html>
 
