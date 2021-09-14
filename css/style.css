@@ -125,6 +125,20 @@ header {
   border: none;
   text-align: center; }
 
+.clientes {
+  background-color: #fff;
+  min-height: 45vh; }
+
+.tituloClientes {
+  text-align: center;
+  font-weight: bold; }
+
+.sizeClientes {
+  width: 5rem; }
+
+.sizeClientesGrandes {
+  width: 4rem; }
+
 .galeriaEquipos {
   margin-top: 80px; }
 
