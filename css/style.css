@@ -52,7 +52,7 @@ header {
   background-color: rgba(0, 0, 0, 0.4); }
 
 .mainIndex h2 {
-  font-size: 2.6em;
+  font-size: 2em;
   text-align: center;
   color: #dcdde1;
   font-weight: bold; }
@@ -98,7 +98,7 @@ header {
   height: 100vh; }
 
 .textoCarousel {
-  font-size: 2.6em;
+  font-size: 2em;
   text-align: center;
   font-weight: bold;
   margin-bottom: 10vh; }
@@ -126,8 +126,7 @@ header {
   text-align: center; }
 
 .clientes {
-  background-color: #fff;
-  min-height: 45vh; }
+  background-color: #fff; }
 
 .tituloClientes {
   text-align: center;
@@ -138,6 +137,9 @@ header {
 
 .sizeClientesGrandes {
   width: 4rem; }
+
+.sizeClientesChicos {
+  width: 7rem; }
 
 .galeriaEquipos {
   margin-top: 80px; }
