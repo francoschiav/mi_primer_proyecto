@@ -157,6 +157,16 @@ header {
 .unicoDeCg {
   align-content: space-between; }
 
+.detalleTecnico {
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  justify-self: center; }
+
+.modalJustificado {
+  text-align: start; }
+
 .gallery {
   padding: 80px 0; }
 
