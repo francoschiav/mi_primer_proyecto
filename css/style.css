@@ -1,11 +1,10 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: "IBM Plex Sans", sans-serif; }
 
 html {
-  font-family: "Roboto", sans-serif;
-  font-family: "flama light";
   font-size: 62,5%;
   font-style: normal;
   font-weight: 400;
@@ -58,7 +57,8 @@ header {
   font-weight: bold; }
 
 .slogan {
-  z-index: 100; }
+  z-index: 100;
+  margin: auto; }
 
 .fondoContacto {
   background: url(../imagenes/paisajeCordillera.png) no-repeat center center fixed;
